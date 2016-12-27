@@ -14,6 +14,10 @@ public class LinkedHashMap
         for (int i = 5; i < 10; i++){
             lhmap.put(i, i * 3);
         }
+
+
+
+
 //        for (Map.Entry<Integer, Integer> entry : lhmap.entrySet()){
 //            System.out.println(entry.getKey() + ", " + entry.getValue());
 //        }
