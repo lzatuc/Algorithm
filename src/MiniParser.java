@@ -8,13 +8,20 @@ public class MiniParser
 {
 
     public static void main(String[] args){
-        int sum = 8;
-        char c = (char)(sum + '0');
-        System.out.println(c);
-        String str = "ab";
-        StringBuilder sb = new StringBuilder(str);
-        sb.append(55);
-        System.out.println(sb.toString());
+        for (int i = 0; i < 10; i++){
+            System.out.println(new Random().nextInt(5));
+        }
+//        char ch = null;
+//        System.out.println(Character.isDigit(ch = '5'));
+//        int sum = 8;
+//        char c = (char)(sum + '0');
+//        System.out.println(c);
+//        String str = "ab";
+//        StringBuilder sb = new StringBuilder(str);
+//        sb.append(55);
+//        System.out.println(sb.toString());
+//        int a = '9' - '0';
+//        System.out.println(a);
 //        System.out.println(sb.toString());
 //        int a = 1;
 //        char c = (char)(a + '0');
