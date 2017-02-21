@@ -1,5 +1,6 @@
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 /**
  * Created by lizheng on 2017/1/25.
@@ -27,7 +28,13 @@ public class PredicttheWinner {
     }
 
     public static void main(String[] args){
-        int[] nums = {1, 5, 2};
-        new PredicttheWinner().PredictTheWinner(nums);
+//        int[] nums = {1, 5, 2};
+//        new PredicttheWinner().PredictTheWinner(nums);
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(1,2);
+        map.put(3,2);
+        map.put(4,3);
+        System.out.println(map.entrySet().stream().filter(entry -> entry.getValue() == 3).map(entry -> entry.getValue()).collect(Collectors.toList()));
+
     }
 }
